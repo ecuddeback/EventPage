@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Event Website</title>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"><a href="#home">Shrek Rave</a></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Register</a></li>                    
+                <li><a href="#">FAQs</a></li>                    
+            </ul>
+        </div>
+    </nav>
+
+            <!-- HAMBURGER MENU -->
+    <nav id="hamburger-nav">            
+        <div class="logo"><a href="#home">Shrek Rave</a></div>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+               <div class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="#" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="#" onclick="toggleMenu()">Events</a></li>
+                    <li><a href="#" onclick="toggleMenu()">Register</a></li>
+                    <li><a href="#" onclick="toggleMenu()">FAQs</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Swamps Across America</h1>
+        <p>Join us for an unforgettable Shrek rave experience!</p>
+    </header>
+
+    <section class="event-details">
+        <h2>Event Details</h2>
+        <p><span>Date: </span>March 24, 2024</p>
+        <p><span>Location: </span>Orlando House of Blues</p>
+        <p><span>Time: </span>9:00 PM EST - Close</p>
+    </section>
+
+    <section class="registration-form">
+        <h2>Register Now!</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+            <button type="submit" >Register</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Shrek Rave. <br>All rights reserved.</p>
+    </footer>
+</body>
+</html>
